@@ -1,1 +1,59 @@
 <!-- TODO: estructura -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header,nav,article,aside,footer{
+            border:solid 1px #5F9EA0; 
+            border-radius:15px; 
+            text-align: center;
+        }
+        main{
+            display: flex; 
+            margin: 8px 0px;
+        }
+
+        nav,aside{
+            width: 20%;
+        }
+
+        article{
+            width: 60%;
+            margin: 0px 8px;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #E8F2A1; ">
+        <h1 style="margin-bottom: 0px;">Título del encabezado</h1>
+        <p style="margin-top: 0px;">Texto del encabezado</p>
+    </header>
+<!-- ?padre en comun -->
+    <main>
+        <nav style="background-color: #F7D1D5;">
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ul>
+        </nav>
+        <article style="background-color: #FFF5CE;">
+            <h1>Títitulo del artículo 1 </h1>
+            <p>Texto del articulo 1</p>
+            <h1>Títitulo del artículo 2</h1>
+            <p>Texto del articulo 2</p>
+        </article>
+        <aside style="background-color: #DEDCE6;">
+            <h1>Títitulo del Aside 2</h1>
+            <p>Contenido del Aside</p>
+        </aside>
+    </main>
+<!-- ? termina padre -->
+    <footer style="background-color: #B4C7DC; ">
+        <p>Texto de pie de página</p>
+    </footer>
+</body>
+</html>
