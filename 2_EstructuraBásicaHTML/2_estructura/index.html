@@ -5,51 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        header,nav,article,aside,footer{
-            border:solid 1px #5F9EA0; 
-            border-radius:15px; 
+        body{
+            background-color: #75c9b7;
             text-align: center;
+            font-family: sans-serif;
+        }
+        header{
+            background-color: #322E2F;
+            display: flex;
+            flex-direction: column;
+        }
+        header h1{
+            color: #C7DDCC;
+        }
+        header nav{
+            background-color: #C7DDCC;
+        }
+        nav a{
+            color: #322E2F;
+            text-decoration: none;
+        }
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 40px;
         }
         main{
-            display: flex; 
-            margin: 8px 0px;
+            background-color: #C8DDCC;
+            display: flex;
+            padding: 5px;
+            margin: 5px 0px;
         }
-        nav,aside{
+        main section{
+            background-color: #12A4D9;
+            width: 80%;
+            margin-right: 5px;
+        }
+        main aside{
             width: 20%;
+            background-color: #D9138A;
         }
-        article{
-            width: 60%;
-            margin: 0px 8px;
+        footer{
+            background-color: #E2D810;
+            height: 40px;
+            padding: 5px 0px;
         }
+        h1{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        button{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
     </style>
 </head>
 <body>
-    <header style="background-color: #E8F2A1; ">
-        <h1 style="margin-bottom: 0px;">Título del encabezado</h1>
-        <p style="margin-top: 0px;">Texto del encabezado</p>
-    </header>
-    <main>
-        <nav style="background-color: #F7D1D5;">
-            <ul>
-                <li>Elemento 1</li>
-                <li>Elemento 2</li>
-                <li>Elemento 3</li>
-                <li>Elemento 4</li>
-            </ul>
+    <header>
+        <h1>Ecaezado nivel 1</h1>
+        <nav>
+            <a href="">Enlace 1</a>
+            <a href="">Enlace 2</a>
+            <a href="">Enlace 3</a>
+            <a href="">Enlace 4</a>
         </nav>
-        <article style="background-color: #FFF5CE;">
-            <h1>Títitulo del artículo 1 </h1>
-            <p>Texto del articulo 1</p>
-            <h1>Títitulo del artículo 2</h1>
-            <p>Texto del articulo 2</p>
-        </article>
-        <aside style="background-color: #DEDCE6;">
-            <h1>Títitulo del Aside 2</h1>
-            <p>Contenido del Aside</p>
+    </header>
+
+    <main>
+        
+        <section>
+            <h1>Encazado nivel 2</h1>
+            <p>Aqui va texto del primer parrafo</p>
+            <p>Aqui va texto del segundo parrafo</p>
+        </section>
+        <aside>
+            <h1>Apartado</h1>
+            <p>Elige una opcion</p>
+            <div>
+                <input type="checkbox">
+                <label for="">Opcion 1</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="">Opcion 2</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="">Opcion 3</label>
+            </div>
+            <button>Enviar</button>
         </aside>
     </main>
-    <footer style="background-color: #B4C7DC; ">
-        <p>Texto de pie de página</p>
+    <footer>
+        <p>Seccion de informacon de contacto, derechos de autor, etc.</p>
     </footer>
 </body>
 </html>
